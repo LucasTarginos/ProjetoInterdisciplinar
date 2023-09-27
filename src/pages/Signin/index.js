@@ -24,11 +24,11 @@ export default function Signin() {
       style={styles.input}
       />
 
-    <TouchableOpacity style={styles.Notrgm}>
+    <TouchableOpacity style={styles.Notrgm} onPress={() => navigation.navigate('Rgm') }>
       <Text style={styles.esqueci}> Esqueci o RGM </Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.Notsenha}>
+      <TouchableOpacity style={styles.Notsenha} onPress={() => navigation.navigate('Senha') } >
       <Text style={styles.esqueci}> Esqueceu ou deseja efetuar o reset da sua senha? </Text>
       </TouchableOpacity>
 
