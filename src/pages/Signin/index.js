@@ -44,7 +44,7 @@ export default function Signin() {
           <Text style={styles.esqueci}> Esqueceu ou deseja efetuar o reset da sua senha? </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Dashboard')}>
           <Text style={styles.buttonText}>Entrar</Text>
         </TouchableOpacity>
 

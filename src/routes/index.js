@@ -5,6 +5,8 @@ import Register from '../pages/Register'
 import Signin from '../pages/Signin'
 import Rgm from '../pages/Rgm'
 import Senha from '../pages/Senha'
+import Dashboard from '../pages/Dashboard'
+
 const Stack = createNativeStackNavigator(); 
 
 export default function Routes(){
@@ -40,7 +42,11 @@ export default function Routes(){
                 > 
             </Stack.Screen>
 
-            
+            <Stack.Screen name="Dashboard"
+                component={Dashboard}
+                options={{headerShown:false}} 
+                > 
+            </Stack.Screen>
 
         </Stack.Navigator>
     )
