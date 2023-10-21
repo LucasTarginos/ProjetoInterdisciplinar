@@ -55,7 +55,7 @@ export default function Dashboard() {
           <Text style={styles.textCard}>Meu curso</Text>
     </TouchableOpacity>
 
-    <TouchableOpacity style={styles.card}>
+    <TouchableOpacity style={styles.card}  onPress={() => navigation.navigate('Amigos')}>
           <Image source={require('../../assets/amigos.png')} style={styles.cardIcon} />
           <Text style={styles.textCard}>Amigos</Text>
     </TouchableOpacity>
