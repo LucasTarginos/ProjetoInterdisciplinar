@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import React, { useState, useEffect } from 'react';
 import {
   SafeAreaView,
@@ -10,7 +11,6 @@ import {
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 import ListItem from '../../components/ListItem';
@@ -90,26 +90,26 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: wp('2%'), // Utiliza widthPercentageToDP para o padding
+    padding: wp('2%'), 
     paddingVertical: wp('8%'),
     backgroundColor: '#272E72',
   },
   headerTitle: {
-    fontSize: wp('6%'), // Utiliza widthPercentageToDP para o tamanho da fonte
+    fontSize: wp('6%'), 
     color: '#FFFFFF',
   },
   input: {
-    height: hp('7%'), // Utiliza heightPercentageToDP para a altura
+    height: hp('7%'), 
     backgroundColor: '#363636',
     borderRadius: 5,
-    fontSize: wp('4%'), // Utiliza widthPercentageToDP para o tamanho da fonte
-    paddingLeft: wp('4%'), // Utiliza widthPercentageToDP para o padding
-    paddingRight: wp('4%'), // Utiliza widthPercentageToDP para o padding
+    fontSize: wp('4%'), 
+    paddingLeft: wp('4%'), 
+    paddingRight: wp('4%'), 
     color: '#FFFFFF',
-    margin: wp('2%'), // Utiliza widthPercentageToDP para a margem
+    margin: wp('2%'), 
   },
   list: {
     flex: 1,
-    margin: wp('2%'), // Utiliza widthPercentageToDP para a margem
+    margin: wp('2%'), 
   },
 });
