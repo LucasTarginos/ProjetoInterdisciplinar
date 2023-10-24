@@ -7,6 +7,7 @@ import Rgm from '../pages/Rgm'
 import Senha from '../pages/Senha'
 import Dashboard from '../pages/Dashboard'
 import Amigos from '../pages/Amigos'
+import MenuAmigos from '../pages/MenuAmigos'
 
 const Stack = createNativeStackNavigator(); 
 
@@ -51,6 +52,12 @@ export default function Routes(){
 
             <Stack.Screen name="Amigos"
                 component={Amigos}
+                options={{headerShown:false}} 
+                > 
+            </Stack.Screen>
+
+            <Stack.Screen name="MenuAmigos"
+                component={MenuAmigos}
                 options={{headerShown:false}} 
                 > 
             </Stack.Screen>

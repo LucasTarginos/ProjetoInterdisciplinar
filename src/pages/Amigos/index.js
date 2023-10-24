@@ -15,7 +15,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 
 import ListItem from '../../components/ListItem';
 import results from '../../components/results';
-import { DrawerContent } from '@react-navigation/drawer';
+// import { DrawerContent } from '@react-navigation/drawer';
 
 export default function Amigos() {
   const [searchText, setSearchText] = useState('');
@@ -46,7 +46,7 @@ export default function Amigos() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.openDrawer()}>
+        <TouchableOpacity onPress={() => navigation.navigate('MenuAmigos')}>
           <MaterialCommunityIcons name="menu" size={wp('8%')} color="#FFFFFF" />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Amigos</Text>

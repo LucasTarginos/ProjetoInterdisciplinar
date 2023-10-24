@@ -20,7 +20,7 @@ export default function Register() {
       <View style={styles.containerInicio}>
         <Text style={styles.intro}>BEM VINDO AO {'\n'}CAMPUS SOCIAL!</Text>
         <Text style={styles.info}>Antes de conhecer sua universidade,{'\n'} nos forneça algumas informações necessárias.</Text>
-        <Text style={styles.message}>Não se preocupe, seus dados estarão protegidos ;) </Text>
+        <Text style={styles.message}>Não se preocupe, seus dados estarão protegidos ; </Text>
       </View>
 
       <View style={styles.containerForm}>

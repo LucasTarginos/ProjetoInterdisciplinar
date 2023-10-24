@@ -1,10 +1,11 @@
+/*
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { DrawerContentScrollView } from '@react-navigation/drawer';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
-const DrawerContent = ({ navigation }) => {
+function DrawerContent ({ navigation }) {
   return (
     <DrawerContentScrollView style={styles.container}>
       <View style={styles.header}>
@@ -68,3 +69,5 @@ const styles = StyleSheet.create({
 });
 
 export default DrawerContent;
+
+*/
