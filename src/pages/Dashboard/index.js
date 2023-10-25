@@ -2,6 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Linking  } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { StatusBar } from 'expo-status-bar';
 
 export default function Dashboard() {
   const navigation = useNavigation();
@@ -64,6 +65,7 @@ export default function Dashboard() {
       <View style={styles.footerImageContainer}>
         <Image source={require('../../assets/Unipe.png')} style={styles.footerImage} />
       </View>
+      <StatusBar style="light" />
     </ScrollView>
   );
 }

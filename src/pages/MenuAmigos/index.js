@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Image } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { StatusBar } from 'expo-status-bar';
 
 export default function MenuAmigos() {  
     const navigation = useNavigation();
@@ -39,6 +40,7 @@ export default function MenuAmigos() {
       <View style={styles.footerImageContainer}>
         <Image source={require('../../assets/Unipe.png')} style={styles.footerImage} />
       </View>
+      <StatusBar style="light" />
     </ScrollView>
   );
 };

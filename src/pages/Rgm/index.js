@@ -2,6 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { StatusBar } from 'expo-status-bar';
 
 export default function Rgm() {
   const navigation = useNavigation();
@@ -57,6 +58,7 @@ export default function Rgm() {
           </Text>
         )}
       </View>
+      <StatusBar style="light" />
     </ScrollView>
   );
 }

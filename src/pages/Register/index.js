@@ -2,6 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { StatusBar } from 'expo-status-bar';
 
 export default function Register() {
   const navigation = useNavigation();
@@ -49,6 +50,7 @@ export default function Register() {
       <TouchableOpacity style={styles.buttonLogin} onPress={() => navigation.navigate('Signin')}>
         <Text style={styles.login}>Já tem uma conta? Entrar</Text>
       </TouchableOpacity>
+      <StatusBar style="light" />
     </ScrollView>
   );
 }

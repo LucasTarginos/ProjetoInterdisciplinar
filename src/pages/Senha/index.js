@@ -2,6 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { StatusBar } from 'expo-status-bar';
 
 export default function Senha() {
   const navigation = useNavigation();
@@ -54,6 +55,7 @@ export default function Senha() {
           </Text>
         )}
       </View>
+      <StatusBar style="light" />
       </ScrollView>
   );
 }

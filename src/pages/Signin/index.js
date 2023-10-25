@@ -2,6 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { StatusBar } from 'expo-status-bar';
 
 export default function Signin() {
   const navigation = useNavigation();
@@ -52,6 +53,7 @@ export default function Signin() {
           <Text style={styles.registerText}>Não tem conta? Registro </Text>
         </TouchableOpacity>
       </View>
+      <StatusBar style="light" />
     </ScrollView>
   );
 }
