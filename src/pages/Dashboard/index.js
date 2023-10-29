@@ -46,7 +46,7 @@ export default function Dashboard() {
           <Text style={styles.textCard}>Blackboard</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.card}>
+      <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('Mapa')} >
           <Image source={require('../../assets/mapa.png')} style={styles.cardIcon} />
           <Text style={styles.textCard}>Mapa</Text>
      </TouchableOpacity>

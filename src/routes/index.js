@@ -1,13 +1,14 @@
-import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Welcome from '../pages/Welcome'
-import Register from '../pages/Register'
-import Signin from '../pages/Signin'
-import Rgm from '../pages/Rgm'
-import Senha from '../pages/Senha'
-import Dashboard from '../pages/Dashboard'
-import Amigos from '../pages/Amigos'
-import MenuAmigos from '../pages/MenuAmigos'
+import Welcome from '../pages/Welcome';
+import Register from '../pages/Register';
+import Signin from '../pages/Signin';
+import Rgm from '../pages/Rgm';
+import Senha from '../pages/Senha';
+import Dashboard from '../pages/Dashboard';
+import Amigos from '../pages/Amigos';
+import MenuAmigos from '../pages/MenuAmigos';
+import Mapa from '../pages/Mapa';
 
 const Stack = createNativeStackNavigator(); 
 
@@ -54,6 +55,12 @@ export default function Routes(){
                 component={Amigos}
                 options={{headerShown:false}} 
                 > 
+            </Stack.Screen>
+
+            <Stack.Screen name="Mapa"
+                component={Mapa}
+                options={{headerShown:false}}
+                >
             </Stack.Screen>
 
             <Stack.Screen name="MenuAmigos"
